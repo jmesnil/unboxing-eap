@@ -55,8 +55,7 @@ spec:
       summary:
         failed: Try the steps again.
         success: Your JBoss EAP7 application has been deployed onto OpenShift.
-      title: Create a JBoss EAP7 application from a Helm Chart
-
+      title: Create a JBoss EAP7 application with Helm
     - description: >-
         The Helm release can be displayed to see all resources that were created when the JBoss EAP 7 application is deployed.
         
@@ -72,7 +71,7 @@ spec:
       summary:
         failed: Try the steps again.
         success: Your Helm release for JBoss EAP 7 is deployed.
-      title: View the Helm Release
+      title: View the Helm release
     - description: >-
         To view the build status of the JBoss EAP 7 application:
         
@@ -83,6 +82,8 @@ spec:
         1. Click on the **eap74** Build Config 
 
         1. The build is shown in the **Builds** tab and is named **eap74-2**.
+
+            - this build will appear once a first intermediate build **eap74-build-artifacts-1** is complete which may take a few minutes.
 
             - a Build will go in various stages that are shown in a badge next to the build name (**Pending, Running, Complete**)
       review:
@@ -95,7 +96,7 @@ spec:
       summary:
         failed: Try the steps again.
         success: Your build is complete.
-      title: View the build status
+      title: View the Build status
     - description: >-
         To view the pod status:
 
