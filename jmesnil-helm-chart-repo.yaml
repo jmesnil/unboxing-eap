@@ -1,0 +1,7 @@
+apiVersion: helm.openshift.io/v1beta1
+kind: HelmChartRepository
+metadata:
+  name: eap-helm-chart-repo
+spec:
+  connectionConfig:
+    url: https://jmesnil.github.io/eap-charts/
