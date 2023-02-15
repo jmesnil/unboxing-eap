@@ -34,7 +34,7 @@ spec:
                         
         1. On the **+Add** page, click **Helm Chart**. 
         
-        1. In the Helm Chart catalog, click the **eap74** tile.
+        1. In the Helm Chart catalog, click the **JBoss EAP 7.4** tile.
         
             - The side panel displays information about the JBoss EAP 7 chart
         
@@ -85,7 +85,7 @@ spec:
 
             - this build will appear once a first intermediate build **eap74-build-artifacts-1** is complete which may take a few minutes.
 
-            - a Build will go in various stages that are shown in a badge next to the build name (**Pending, Running, Complete**)
+            - a build will go in various stages that are shown in a badge next to the build name (**Pending, Running, Complete**)
       review:
         failedTaskHelp: This task isn’t verified yet. Try the task again.
         instructions: >-
@@ -106,7 +106,7 @@ spec:
 
               - Notice that the **eap74** deployment has a pod donut imposed on the circle, representing the pod status.  
 
-              - The color of the donut indicates the pod status (light blue = **Not Started**, dark blue = **Running**)
+              - The color of the donut indicates the pod status (light blue = **Pending**, blue = **Not Ready**, dark blue = **Running**)
 
       review:
         failedTaskHelp: >-
